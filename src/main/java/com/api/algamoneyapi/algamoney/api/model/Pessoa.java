@@ -71,3 +71,16 @@ public class Pessoa {
         return Objects.hash(id, nome, ativo, endereco);
     }
 }
+
+/*
+    Post 1 -> PostDetails 1
+    @OneToOne(mappedBy = "post", cascade = CascadeType.ALL,
+              fetch = FetchType.LAZY, optional = false)
+    private PostDetails details;
+    
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "post_id")
+    private Post post;
+    
+    
+*/
